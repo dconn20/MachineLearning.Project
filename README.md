@@ -13,7 +13,7 @@
 
 
 
-#### OVERVIEW OF PROJECT
+### OVERVIEW OF PROJECT
 *****************************************************************************************************************************************************************
 
 In this project you must create a web service that uses machine learning to make predictions
@@ -42,7 +42,7 @@ one model.
 
 <br/>
 
-#### PACKAGES USED IN THIS PROJECT
+### PACKAGES USED IN THIS PROJECT
 ************************************************************************************************************************************************************************
 The following packages were used to run analysis for this project.
 
@@ -72,9 +72,9 @@ Keras https://keras.io/ - An open-source software library that provides a Python
 
 <br/>
 
-#### INSTRUCTIONS
+### INSTRUCTIONS
 *************************************************************************************************************************************************************
-##### Open Jupyter Notebook
+#### Open Jupyter Notebook
 
 Once you install Anaconda, the packages listed above will also be installed.
 
@@ -93,12 +93,29 @@ When opened select run all cells
 Please note that certain cells must be run before others, such as importing the libraries 
 *********************************************************************************************
 
-##### Launch Web Service
+#### Launch Web Service
+
+##### From Command Prompt
 
 To run the server navigate to the correct folder using the command prompt and type in the code below
-
+```
 python server.py
-
+```
 When the server running use the browser to navigate to 127.0.0.1:5000/ to bring you to the web interface
 
 Here wind speed can be entered to make a prediction
+
+##### In Linux virtual enviornment
+```
+$ export FLASK_APP=server.py
+$ python -m flask run
+ * Running on http://127.0.0.1:5000/
+```
+
+##### In Windows virtual enviornment
+```
+export FLASK_APP=web-service.py
+export FLASK_ENV=development
+python3 -m flask run
+ * Running on http://127.0.0.1:5000/
+```
