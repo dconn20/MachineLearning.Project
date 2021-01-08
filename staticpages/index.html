@@ -1,10 +1,10 @@
 <!-- Copied and adapted from https://github.com/ianmcloughlin/random-app/blob/master/static/index.html. -->
-<!-- Copied and adapted from datarepresentation. -->
-<!-- Copied and adapted from Bootstrap homepage. -->
+<!-- Copied and adapted from https://github.com/dconn20/DataRep.Project -->
+<!-- Copied and adapted from https://getbootstrap.com/docs/5.0/examples/ -->
 
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -28,7 +28,7 @@
             text-align: center;
             margin: 10px;
             color: white;
-            background-color: #38af1491;
+            background-color: #33c70591;
             font-family: Calibri;
             font-size: 60px;
             padding: 40px;
@@ -43,21 +43,19 @@
     <h1 class="headings">Predict Power Output</h1>
     <br/>
     <br/>
-    <!-- div containing input text box for wind speed -->
+    <!-- input text box for wind speed -->
     <div class="container">
       <div class="row">
         <div class="col-sm">
 
-          <!-- add text explaining purpose of webpage -->
 
-
-        <!-- Allow user to enter wind speed and click button -->
+        <!-- enter wind speed and click button -->
         <input class="form-control" id="input" type="text" placeholder="Enter wind speed">
       </div>
       </div>
       <br/>
       <br/>
-      <!-- Button that calls function to return prediction -->
+      <!-- Button that calls function -->
       <div class="row">
         <div class="col-sm">
             <button class="btn btn-success" onclick="getAllAjax()" >Power Output Prediction</button>
@@ -65,10 +63,10 @@
       </div>
       <br/>
       <br/>
-      <!-- div with text box to display the predicted power output value -->
+      <!-- text box to display the predicted power output value -->
       <div class="row">
         <div class="col-sm">
-            <p>INSERT TEXT</p>
+            <p></p>
             <input class="form-control" id="output" type="text" placeholder="Predicted power output">
             <br/>
             <br/>
@@ -86,8 +84,7 @@
         // variable p set equal to contents of input text box returned by accessing through DOM
         p = Number(document.getElementById("input").value); 
 
-        // Ajax call to return the value from the app route of /predict/ plus the user entered number in input text box
-        // the prediction returned from the app route is displayed in the output text box by DOM accessing contents of output text box 
+        // Ajax call to return the value from the app route of /predict/ plus the user entered number in input text box 
         $.ajax({
           "url": "http://127.0.0.1:5000/predict/" + p,
           "method":"GET",
@@ -106,19 +103,7 @@
       }
         </script>
       
-
-
     </script>
-
-
-
-
-
-
-
-
-
-
   </body>
 </html>
   
