@@ -91,3 +91,14 @@ Double click the jupyter notebook file and the notebook should open in a new tab
 When opened select run all cells
 
 Please note that certain cells must be run before others, such as importing the libraries 
+*********************************************************************************************
+
+##### Launch Web Service
+
+To run the server navigate to the correct folder using the command prompt and type in the code below
+
+python server.py
+
+When the server running use the browser to navigate to 127.0.0.1:5000/ to bring you to the web interface
+
+Here wind speed can be entered to make a prediction
